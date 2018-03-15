@@ -8,7 +8,7 @@ function pixelhead_enqueue_child_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_dequeue_style('wp-bootstrap-starter-style');
     wp_enqueue_style( 'child-style',
-        get_stylesheet_directory_uri() . '/style.css',
+        get_stylesheet_directory_uri() . '/inc/assets/dist/css/styles.css',
         array('parent-style')
     );
 }
